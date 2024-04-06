@@ -1,0 +1,19 @@
+package com.suchiit;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class OnetoMany3Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext ctx= SpringApplication.run(OnetoMany3Application.class, args);
+	StudentRepo stimpl=ctx.getBean(StudentRepo.class);
+	SubjectRepo  subimpl=ctx.getBean(SubjectRepo.class);
+		
+	
+	
+	}
+
+}

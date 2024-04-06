@@ -1,0 +1,21 @@
+package com.suchiit;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name="student89")
+public class Student {
+
+	private String name;
+	
+	private long id;
+	
+}

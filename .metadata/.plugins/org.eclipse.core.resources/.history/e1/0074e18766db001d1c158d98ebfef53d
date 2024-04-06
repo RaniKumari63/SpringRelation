@@ -1,0 +1,20 @@
+package com.suchiit;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name="subject89")
+public class Subject {
+
+	private String name;
+	@Id
+	@GenericGenerator(name="myGenerator",strategy="increment")
+	@GeneratedValue(strategy=GenerationType.AUTO,generator = "myGenerator")
+	private long id;
+	
+}

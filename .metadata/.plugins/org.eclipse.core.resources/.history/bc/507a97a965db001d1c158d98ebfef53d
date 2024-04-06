@@ -1,0 +1,5 @@
+package com.suchiit;
+
+public interface TeacherRepo {
+
+}
